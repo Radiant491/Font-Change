@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/plyr.css" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <style>
+      .button1 {
+        text-align: center;
+        margin-top: 100px;
+      }
+      @media only screen and (max-width: 600px) {
+        /* Styles for devices with a maximum width of 600px */
+      }
+      .fullscreen {
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0em;
+      }
+      .button1 {
+        text-align: center;
+        margin-top: 100px;
+      }
+      
+      @media only screen and (max-width: 768px) {
+        .button1 {
+          margin-top: 50px;
+        }
+      }
+      
+      @media only screen and (max-width: 576px) {
+        .button1 {
+          margin-top: 30px;
+        }
+      }
+      
+      .fullscreen {
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0em;
+      }
+      
+      @media only screen and (max-width: 768px) {
+        .fullscreen {
+          height: 50vh;
+        }
+      }
+      
+      @media only screen and (max-width: 576px) {
+        .fullscreen {
+          height: 30vh;
+        }
+      }
+      
+    </style>
+  </head>
+  <body id="col">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index.html">
+                <img src="img/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="header__nav">
+              <nav class="header__menu mobile-menu">
+                <ul>
+                  <li class="active"><a href="./index.html">Homepage</a></li>
+                  <li>
+                    <a href="#"
+                      >Categories <span class="arrow_carrot-down"></span
+                    ></a>
+                  </li>
+                  <li><a href="#">Our Blog</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="header__right">
+              <a href="#" class="search-switch"
+                ><span class="icon_search"></span
+              ></a>
+              <a href="#"><span class="icon_profile"></span></a>
+            </div>
+          </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
+    </header>
+
+    <div class="button1" >
+      <h1 id="font" style="color: pink">Roystan Dsouza</h1>
+      <h1 id="font2" style="color: pink">Lucky Star</h1>
+      <br>
+      <button onclick="Font('time')">Times New Roman</button>
+      <button onclick="Font('ari')">Arial</button>
+      <button onclick="Font('ink')">Ink Free</button>
+      <button onclick="Font('com')">Comic Sans MS</button>
+      <button onclick="Font('mv')">MV Boli</button>
+    </div>
+
+    <script>
+        function Font(type) {
+            let font = document.getElementById("font");
+            let font2 = document.getElementById("font2");
+            if (type == "time") {
+              font.style = "font-family:Times New Roman;color:pink";
+              font2.style = "font-family:Times New Roman;color:pink";
+            } else if (type == "ari") {
+              font.style = "font-family:Arial;color:pink";
+              font2.style = "font-family:Arial;color:pink";
+            } else if (type == "ink") {
+              font.style = "font-family:Ink Free;color:pink";
+              font2.style = "font-family:Ink Free;color:pink";
+            } else if (type == "com") {
+              font.style = "font-family:Comic Sans MS;color:pink";
+              font2.style = "font-family:Comic Sans MS;color:pink";
+            } else if (type == "mv") {
+              font.style = "font-family:MV Boli;color:pink";
+              font2.style = "font-family:MV Boli;color:pink";
+            }
+          }
+
+    
+    </script>
+  </body>
+</html>
